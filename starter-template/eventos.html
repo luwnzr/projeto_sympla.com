@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Symla.com</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Features · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="features.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img class="d-block mx-auto mb-3" src="./img/logo2.png" alt="" width="70" height="57">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="ingressos2.html">Ingresso</a>
+            <a class="nav-link" href="eventos.html">Eventos</a>
+            <a class="nav-link" href="ajuda.html">Ajuda</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>Sobre a loja</h4>
+          <p class="text-body-secondary"></p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contato</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Conheça Nossos Eventos</h1>
+        <p class="lead text-body-secondary">Impulsionado pela Excelência, Dirigido pela Confiança!</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://blogs.correiobraziliense.com.br/blog-tecnologia-tony-ventura/wp-content/uploads/sites/50/2024/03/WhatsApp-Image-2024-03-18-at-10.51.35-AM.jpeg" >            
+            <div class="card-body">
+              <p class="card-text">NextGen Expo Web3</p>
+              <p>Data: 15 e 16 de outubro de 2024
+                Local: Rodoviaria de Brasilia, DF
+                Horário: 9h às 18h</p>
+                <p>Descrição:
+                    O InovaTech Summit 2024 é um grande evento de tecnologia da América Latina, abordando tendências em inteligência artificial, blockchain, IoT e sustentabilidade.</p>
+                    <p>Palestrantes Confirmados:
+
+                        Dr. Ana Silva (IA)
+                        Carlos Mendes (tecnologias sustentáveis)
+                        Laura Costa (marketing digital)</p>
+                        <p>Programação:
+
+                            Dia 1: Palestras sobre IA e blockchain, workshops sobre IoT, e networking.
+                            Dia 2: Palestras sobre sustentabilidade e transformação digital, além de workshops sobre marketing.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$85,90</button>
+                  </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://www.tigabytes.com/wp-content/uploads/2023/03/top-5-tendencias-tecnologicas-para-2023-e-porque-sua-empresa-precisa-se-preparar-agora-blog-tigabytes.jpg" >
+            
+            <div class="card-body">
+              <p class="card-text">Tech Innovation Fair 2024</p>
+              <p>Data: 20 e 21 de outubro de 2024
+                Local: Parque da Cidade, Brasilia, DF
+                Horário: 10h às 19h</p>
+              <p>Descrição:
+                A Tech Innovation Fair 2024 é uma feira interativa dedicada a mostrar as inovações mais recentes em tecnologia e startups. O evento reunirá empresas, influenciadores, investidores e entusiastas para explorar novas soluções de tecnologia e fazer networking.</p>
+              <p>Programação:
+                10h00 - Abertura oficial
+                11h00 - Palestra: "O Impacto das Fintechs no Mercado"
+                13h00 - Painel: "Robótica na Indústria 4.0"
+                15h00 - Workshop: "Desenvolvimento de Aplicativos"
+                17h00 - Networking com investidores</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$99,99</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://inventotecnologia.com.br/wp-content/uploads/2018/08/eventos-2018_invento-tec.png" >
+            <div class="card-body">
+              <p class="card-text">Digital Revolution</p>
+              <p>Data: 23-24 de maio de 2024
+                Local: Patio Brasil de Brasilia, DF
+                Horário: 11h às 20h</p>
+              <p>InovaTech 2024 é a conferência anual que reúne os principais líderes, inovadores e entusiastas da tecnologia para discutir as tendências que moldarão o futuro. Com foco em inteligência artificial, internet das coisas, blockchain e sustentabilidade, este evento promete uma imersão nas tecnologias que estão transformando o mundo.</p>
+              <p>Público-alvo: Profissionais de tecnologia, empreendedores, estudantes e acadêmicos.
+
+                Inscrições: Tarifas promocionais até 1º de abril de 2024. Mais informações em Sympla.com</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$74,99</button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://www.anamid.com.br/wp-content/uploads/2024/01/Mapeamento-de-Eventos-de-Tecnologia-Inovacao-Marketing-e-Comunicacao.jpg" >
+            <div class="card-body">
+              <p class="card-text">AI & Beyond</p>
+              <p>Data: 26-27 de outubro de 2024
+                Local: Proxima a estação 110 sul, Brasilia, DF</p>
+              <p>Horário: 12h às 22h</p>
+              <p>Descrição: O Tech Innovation Summit 2024 é o evento definitivo para profissionais e líderes do setor tecnológico, focando nas inovações que estão redefinindo o futuro. Com um lineup de palestrantes renomados e especialistas da indústria, o summit abordará temas como automação, cibersegurança, fintechs e transformação digital.</p>
+              <p>Público-alvo: Profissionais de tecnologia, investidores, empreendedores e acadêmicos.
+
+                Inscrições: Desconto especial até 1º de agosto de 2024. Mais informações em Sympla.com</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$149,99</button>   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://pluginbot.ai/wp-content/uploads/2020/10/pepper-1024x576.jpg" >
+            <div class="card-body">
+              <p class="card-text">Connected World</p>
+              <p>Data: 02-03 de novembro de 2024
+                Local: Proximo a Estação Galeria, Brasilia, DF</p>
+              <p>Horário: 08h às 19h</p>
+              <p>Descrição: O Digital Transformation Expo 2024 é um evento imperdível para líderes e profissionais que buscam impulsionar a transformação digital em suas organizações. Com uma programação repleta de painéis, workshops e apresentações, o evento abordará temas como inteligência artificial, big data, automação de processos e customer experience.</p>
+              <p>Público-alvo: Executivos, gerentes de TI, profissionais de marketing digital e interessados em transformação digital.
+
+                Inscrições: Tarifas antecipadas até 15 de setembro de 2024. Mais informações em Sympla.com</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$109,99</button>                 
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://tecnologiaseeventos.wordpress.com/wp-content/uploads/2018/06/reconhecimento-facial5_b.jpg?w=870&h=475&crop=1" >
+            <div class="card-body">
+              <p class="card-text">Tech Nexus</p>
+              <p>Data: 10-11 de novembro de 2024
+                Local: Park Shopping, Brasilia, DF</p>
+              <p>Horário: 07h às 18h</p>
+              <p>Descrição: O Cybersecurity Summit 2024 é um evento focado em inovações e desafios da cibersegurança. Com palestras de especialistas, workshops interativos e uma exposição de soluções, o summit abordará proteção de dados, resposta a incidentes e tendências emergentes, influenciadores digitais irao comparecer no evento.</p>
+              <p>Público-alvo: Profissionais de TI, gerentes de segurança e interessados em cibersegurança.
+
+                Inscrições: Tarifas promocionais até 10 de janeiro de 2024. Mais informações em Sympla.com</p>
+              <p></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">$115,99</button>                  
+                </div>                
+              </main>
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Sympla Internet Soluções S.A. ©️ Copyright 2024</p>
+    </div>
+  </footer>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>    
+</html>
